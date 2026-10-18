@@ -15,6 +15,8 @@ The client requires an internet connection to reach `https://jsonplaceholder.typ
 - [REST API design](docs/api-design.md)
 - [Data model](docs/data-model.md)
 - [Architecture and capacity plan](docs/architecture.md)
+- [Day 8: TicketHub ticketing design](day8/ticketing-design.md)
+- [Day 8: Reflection](day8/reflection.md)
 
 ## What I learned
 
