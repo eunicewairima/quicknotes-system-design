@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f766e">
+  <title>QuickNotes API Client</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="api.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="brand" href="#" aria-label="QuickNotes home">
+        <span class="brand-mark" aria-hidden="true">Q</span>
+        <span>QuickNotes</span>
+      </a>
+      <p class="tagline">A little space for everything on your mind.</p>
+    </div>
+  </header>
+
+  <main class="note-app">
+    <section class="panel add-panel" aria-labelledby="add-heading">
+      <div class="section-heading">
+        <span class="eyebrow">CAPTURE A THOUGHT</span>
+        <h1 id="add-heading">Add a note</h1>
+      </div>
+      <form id="note-form" novalidate>
+        <div class="form-field">
+          <label for="title-input">Title</label>
+          <input id="title-input" name="title" type="text" maxlength="100" required>
+        </div>
+        <div class="form-field">
+          <label for="body-input">Note</label>
+          <textarea id="body-input" name="body" rows="4"></textarea>
+        </div>
+        <button id="submit-btn" class="primary-button" type="submit">Create note</button>
+      </form>
+    </section>
+
+    <p id="status" class="status" role="status" aria-live="polite">Ready to load your notes.</p>
+
+    <section class="panel notes-panel" aria-labelledby="notes-heading">
+      <div class="notes-title-row">
+        <div class="section-heading">
+          <span class="eyebrow">YOUR PERSONAL SPACE</span>
+          <h2 id="notes-heading">Your notes</h2>
+        </div>
+        <button id="load-btn" class="primary-button" type="button">Load notes</button>
+      </div>
+      <ul id="notes-list" aria-live="polite"></ul>
+    </section>
+  </main>
+</body>
+</html>
